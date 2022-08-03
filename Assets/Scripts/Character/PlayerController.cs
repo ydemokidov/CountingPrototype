@@ -1,6 +1,7 @@
 using System.Collections;
 using UnityEngine;
 
+// INHERITANCE
 public class PlayerController : AbstractCharacterController
 {
     [SerializeField] private float speed;
@@ -48,6 +49,7 @@ public class PlayerController : AbstractCharacterController
             bool attacking = playerAnimator.GetCurrentAnimatorStateInfo(0).IsTag("Attack");
             if (!attacking || !isOnGround)
             {
+                // ABSTRACTION
                 HandleMovement();
             }
 
@@ -63,6 +65,7 @@ public class PlayerController : AbstractCharacterController
             
             if (Input.GetKeyDown(KeyCode.Mouse0))
             {
+                // ABSTRACTION
                 Attack();
             }
 
@@ -111,6 +114,7 @@ public class PlayerController : AbstractCharacterController
         }
     }
 
+    //POLYMORPHISM
     override
     public void Attack()
     {

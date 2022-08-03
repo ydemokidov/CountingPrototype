@@ -6,6 +6,7 @@ using UnityEngine;
 
 public class GameManager : MonoBehaviour
 {
+    // ENCAPSULATION
     public List<GameObject> pooledTargets;
     public GameObject[] targetsToPool;
 

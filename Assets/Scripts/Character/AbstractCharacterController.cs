@@ -1,8 +1,10 @@
 using System.Collections;
 using UnityEngine;
 
+// INHERITANCE
 public abstract class AbstractCharacterController : MonoBehaviour
 {
+    // ENCAPSULATION
     [SerializeField] protected int damage = 20;
     [SerializeField] protected int health = 100;
     [SerializeField] protected GameObject gameManagerObject;
